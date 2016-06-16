@@ -7,12 +7,13 @@
   <div>
     <lable for='inClass'>Class Name</lable>
     <input id='class' name='class' type='text'></input>
-    <span onclick="addClass()">Add</span>
+
+  <button type="button" onclick="addClass(); return false;">Add Class</button>
   </div>
   <div>
    <lable for='student'>Students Name</lable>
    <input id='student' name='student' type='text'></input>
-    <span onclick="addStudent()">Add</span>
+     <button type="button" onclick="addStudent(); return false;">Add Student</button>
   </div>
   <div>
     <lable for='schedule'>Register for Class</lable>
@@ -22,7 +23,7 @@
     <select id='registeredStudents'>
       <option>---Select Student---</option>
     </select>
-    <span onclick="register()">Register</span>
+     <button type="button" onclick="register(); return false;">Register for Class</button>
   </div>
 
   <div id='schedule'>
