@@ -1,0 +1,33 @@
+<html>
+<body>
+<head>
+  <script type="text/javascript" src="app.js" ></script>
+</head>
+<form>
+  <div>
+    <lable for='inClass'>Class Name</lable>
+    <input id='class' name='class' type='text'></input>
+    <span onclick="addClass()">Add</span>
+  </div>
+  <div>
+   <lable for='student'>Students Name</lable>
+   <input id='student' name='student' type='text'></input>
+    <span onclick="addStudent()">Add</span>
+  </div>
+  <div>
+    <lable for='schedule'>Register for Class</lable>
+    <select id='availableClasses'>
+      <option>---Select Class---</option>
+    </select>
+    <select id='registeredStudents'>
+      <option>---Select Student---</option>
+    </select>
+    <span onclick="register()">Register</span>
+  </div>
+
+  <div id='schedule'>
+  </div>
+</form>
+
+</body>
+<html>
