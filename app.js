@@ -48,7 +48,7 @@ function setSchedule() {
 
   console.log(html);
   for(var i = 0; i < schedule.length; i++) {    
-    html += schedule[i].class + ' Is the Subject You are enrolled in ' + schedule[i].student + '<br />'
+    html += schedule[i].class + ' is the class ' + schedule[i].student +  ' is enrolled in ' +  '<br />'
  
 }
   console.log(html);
