@@ -1,34 +1,30 @@
 <html>
 <body>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <script type="text/javascript" src="app.js" ></script>
 </head>
-<form>
-  <div>
-    <lable for='inClass'>Class Name</lable>
-    <input id='class' name='class' type='text'></input>
+<div class="container">
+  <form class="col-sm-8 col-sm-offset-2 m-t-3"> 
+    <input id='class' name='class' type='text' value="" placeholder="Subject Name" />
+    <input id='student' class="m-l-1" name='student' type='text' value="" placeholder="Student Name" />
+    <button type="button" class="m-l-1" onclick="addClass(); addStudent(); return false;">Create Subject and Student</button>
+  </form>
 
-  <button type="button" onclick="addClass(); return false;">Add Class</button>
-  </div>
-  <div>
-   <lable for='student'>Students Name</lable>
-   <input id='student' name='student' type='text'></input>
-     <button type="button" onclick="addStudent(); return false;">Add Student</button>
-  </div>
-  <div>
-    <lable for='schedule'>Register for Class</lable>
+  <fieldset class="col-sm-8 col-sm-offset-2 m-t-3">
     <select id='availableClasses'>
-      <option>---Select Class---</option>
+      <option>Enroll in a class</option>
     </select>
-    <select id='registeredStudents'>
-      <option>---Select Student---</option>
+    <select id='registeredStudents' class="m-l-1">
+      <option>Select a student to enroll</option>
     </select>
-     <button type="button" onclick="register(); return false;">Register for Class</button>
-  </div>
+     <button type="button" class="m-l-1" onclick="register(); return false;">Register for Class</button>
+  </fieldset>
 
-  <div id='schedule'>
+  <div id='schedule' class="container col-sm-8 col-sm-offset-2 m-t-2">
   </div>
-</form>
+</div>
 
 </body>
 <html>
